@@ -31,13 +31,18 @@ int_list1.reverse() # 내림차순 정렬
 list_slicing = int_list1[0:3]
 print(list_slicing)
 
+# 문자열 슬라이싱
+"string"[0:]
+
 
 # 문자열을 리스트로 저장
 str_to_list1 = [str for str in "string123"[0:]]
-str_to_list_reverse1 = [str for str in "string123"[::-1]]
 str_to_list2 = sorted("string123")
+str_to_list3 = list("string")
+
+str_to_list_reverse1 = [str for str in "string123"[::-1]]
 str_to_list_reverse2 = sorted("string123", reverse=True)
-print(str_to_list1)
+print(str_to_list3)
 '''
     sort(리스트) 와 sorted(리스트, 문자열) 의 차이 - sort() 는 본체의 리스트를 정렬해서 반환 / sorted() 는 정렬한 새로운 리스트 반환
 '''
